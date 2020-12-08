@@ -1,0 +1,54 @@
+body {
+    background-color: aqua;
+}
+
+.container {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+}
+
+.clock {
+    font-size: 25px; 
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px;
+    
+}
+
+.card {
+    position: relative;
+    width: 166px;
+    height: 235px;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    transition: transform 1s;
+    transform-style: preserve-3d;    
+}
+
+.card--face {
+    position: absolute;
+    width: 166px;
+    border-radius: 0.5rem;
+    height: 235px;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.card--front {
+    background-image: url('https://coolbackgrounds.io/images/backgrounds/white/white-unsplash-9d0375d2.jpg');
+    
+}
+
+.card--back {
+    line-height: 235px;
+    text-align: center;
+    font-size: 80px;
+    background-color: springgreen;
+    transform: rotateY(180deg)    
+}
